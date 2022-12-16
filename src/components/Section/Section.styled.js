@@ -6,5 +6,5 @@ export const StatSection = styled.section`
 
 export const Title = styled.h2`
   margin-bottom: 30px;
-  font-size: 24px;
+  font-size: 28px;
 `;
