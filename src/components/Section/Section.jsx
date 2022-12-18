@@ -1,22 +1,19 @@
 import PropTypes from 'prop-types';
-import React, { Component } from 'react';
 import { StatSection, Title } from './Section.styled';
 
-class Section extends Component {
-  static propTypes = {
-    title: PropTypes.string.isRequired,
-  };
+const Section = props => {
+  const { title, children } = props;
 
-  render() {
-    const { title, children } = this.props;
+  return (
+    <StatSection>
+      <Title>{title}</Title>
+      {children}
+    </StatSection>
+  );
+};
 
-    return (
-      <StatSection>
-        <Title>{title}</Title>
-        {children}
-      </StatSection>
-    );
-  }
-}
+Section.propTypes = {
+  title: PropTypes.string.isRequired,
+};
 
 export default Section;
