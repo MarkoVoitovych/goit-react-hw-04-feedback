@@ -14,7 +14,7 @@ const FeedbackOptions = props => {
             value={item}
             key={item}
           >
-            {item.slice(0, 1).toUpperCase() + item.slice(1)}
+            {item}
           </Button>
         );
       })}

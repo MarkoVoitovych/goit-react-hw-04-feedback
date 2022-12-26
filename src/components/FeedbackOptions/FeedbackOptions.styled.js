@@ -11,6 +11,7 @@ export const Button = styled.button`
   border: 1px solid black;
   border-radius: 5px;
   cursor: pointer;
+  text-transform: capitalize;
   :hover {
     background-color: skyblue;
   }
