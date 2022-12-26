@@ -16,7 +16,7 @@ const Statistics = props => {
         <Text>Bad: {bad}</Text>
       </Item>
       <Item>
-        <Text> Total: {total()}</Text>
+        <Text> Total: {total}</Text>
       </Item>
       <Item>
         <Text> Positive feedback: {positivePercentage() + '%'}</Text>
@@ -29,7 +29,7 @@ Statistics.propTypes = {
   good: PropTypes.number.isRequired,
   neutral: PropTypes.number.isRequired,
   bad: PropTypes.number.isRequired,
-  total: PropTypes.func.isRequired,
+  total: PropTypes.number.isRequired,
   positivePercentage: PropTypes.func.isRequired,
 };
 
